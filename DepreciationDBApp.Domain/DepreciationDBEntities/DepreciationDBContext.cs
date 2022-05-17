@@ -111,11 +111,11 @@ namespace DepreciationDBApp.Domain.DepreciationDBEntities
 
                 entity.Property(e => e.Id).HasColumnName("id");
 
-                entity.Property(e => e.Adress)
+                entity.Property(e => e.Address)
                     .IsRequired()
                     .HasMaxLength(200)
                     .IsUnicode(false)
-                    .HasColumnName("adress");
+                    .HasColumnName("address");
 
                 entity.Property(e => e.Dni)
                     .IsRequired()
@@ -135,11 +135,11 @@ namespace DepreciationDBApp.Domain.DepreciationDBEntities
                     .IsUnicode(false)
                     .HasColumnName("lastnames");
 
-                entity.Property(e => e.Name)
+                entity.Property(e => e.Names)
                     .IsRequired()
                     .HasMaxLength(50)
                     .IsUnicode(false)
-                    .HasColumnName("name");
+                    .HasColumnName("names");
 
                 entity.Property(e => e.Phone)
                     .IsRequired()

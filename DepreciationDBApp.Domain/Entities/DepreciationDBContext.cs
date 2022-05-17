@@ -19,6 +19,8 @@ namespace DepreciationDBApp.Domain.Entities
         }
 
         public virtual DbSet<Asset> Assets { get; set; }
+        public DbSet<AssetEmployee> AssetEmployees { get ; set ; }
+        public DbSet<Employee> Employees { get ; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

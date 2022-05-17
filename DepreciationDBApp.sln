@@ -9,7 +9,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DepreciationDBApp.Domain", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DepreciationDBApp.Infrastructure", "DepreciationDBApp.Infrastructure\DepreciationDBApp.Infrastructure.csproj", "{A903103A-FE0A-42EF-86D5-5BFB310229B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DepreciationDBApp.Applications", "DepreciationDBApp.Applications\DepreciationDBApp.Applications.csproj", "{B3F5BCAD-E653-4653-AB69-2BD57051900E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DepreciationDBApp.Applications", "DepreciationDBApp.Applications\DepreciationDBApp.Applications.csproj", "{B3F5BCAD-E653-4653-AB69-2BD57051900E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D90CC6C8-D275-4423-961F-85FBEEBCA781}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Downloads\DepreciationDB.sql.txt = ..\..\..\Downloads\DepreciationDB.sql.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

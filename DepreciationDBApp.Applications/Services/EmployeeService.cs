@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DepreciationDBApp.Applications.Services
 {
-   public class EmployeeService : IEmployeeService
+    public class EmployeeService : IEmployeeService
     {
 
         private IEmployeeRepository employeeRepository;
@@ -21,37 +21,50 @@ namespace DepreciationDBApp.Applications.Services
 
         public void Create(Employee t)
         {
-            throw new NotImplementedException();
+            employeeRepository.Create(t);
         }
 
         public bool Delete(Employee t)
         {
-            throw new NotImplementedException();
+            return employeeRepository.Delete(t);
         }
 
         public Employee FindByDni(string dni)
         {
-            throw new NotImplementedException();
+            return employeeRepository.FindByDni(dni);
         }
 
         public Employee FindByEmail(string email)
         {
-            throw new NotImplementedException();
+            return employeeRepository.FindByEmail(email);
         }
 
         public IEnumerable<Employee> FindByLastnames(string lastnames)
         {
-            throw new NotImplementedException();
+            return employeeRepository.FindByLastnames(lastnames);
         }
 
         public List<Employee> GetAll()
         {
-            throw new NotImplementedException();
+            return employeeRepository.GetAll();
         }
+
+        public bool SetAssetToEmployee(Employee employee, Asset asset, DateTime effectiveDate)
+        {
+            return employeeRepository.SetAssetToEmployee(employee, asset, effectiveDate);
+        }
+
+        public bool SetAssetToEmployee(Employee employee, List<Asset> assets, DateTime effectiveDate)
+        {
+            return employeeRepository.SetAssetToEmployee(employee, assets,effectiveDate);
+        }
+
 
         public int Update(Employee t)
         {
-            throw new NotImplementedException();
+         return employeeRepository.Update(t);
         }
+
+
     }
 }

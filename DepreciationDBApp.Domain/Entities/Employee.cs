@@ -13,9 +13,9 @@ namespace DepreciationDBApp.Domain.Entities
         }
 
         public int Id { get; set; }
-        public string Name { get; set; }
+        public string Names { get; set; }
         public string Lastnames { get; set; }
-        public string Adress { get; set; }
+        public string Address { get; set; }
         public string Phone { get; set; }
         public string Email { get; set; }
         public string Dni { get; set; }

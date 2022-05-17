@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2LSuWlJrwNGmdqvuluhUYD2wkj2VSD8/gzpTDIL5w4reNdFxbIXA8JqGLDn97znfh4NgYuaIyh6HurLKhQiSpA==",
+  "dgSpecHash": "zoWCimsQvm1667uaZw8ByG95T9P1Vi20WqsLaYJXAzAV6JhCsWqnDTOvrEf78tCJq4O0euTN9yzsEVyyB7mCwQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\JADPA21\\source\\repos\\DepreciationDBApp\\DepreciationDBApp.Applications\\DepreciationDBApp.Applications.csproj",
+  "projectFilePath": "C:\\Users\\JADPA21\\Source\\Repos\\DepreciationDBApp\\DepreciationDBApp.Applications\\DepreciationDBApp.Applications.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\JADPA21\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

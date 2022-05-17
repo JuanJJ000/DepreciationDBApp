@@ -12,4 +12,4 @@ C:\Users\JADPA21\Source\Repos\DepreciationDBApp\DepreciationDBApp.Domain\obj\Deb
 C:\Users\JADPA21\Source\Repos\DepreciationDBApp\DepreciationDBApp.Domain\obj\Debug\net5.0\ref\DepreciationDBApp.Domain.dll
 C:\Users\JADPA21\Source\Repos\DepreciationDBApp\DepreciationDBApp.Domain\obj\Debug\net5.0\DepreciationDBApp.Domain.pdb
 C:\Users\JADPA21\Source\Repos\DepreciationDBApp\DepreciationDBApp.Domain\obj\Debug\net5.0\DepreciationDBApp.Domain.genruntimeconfig.cache
-C:\Users\JADPA21\source\repos\DepreciationDBApp\DepreciationDBApp.Domain\obj\Debug\net5.0\refint\DepreciationDBApp.Domain.dll
+C:\Users\JADPA21\Source\Repos\DepreciationDBApp\DepreciationDBApp.Domain\bin\Debug\net5.0\ref\DepreciationDBApp.Domain.dll
