@@ -175,7 +175,7 @@ namespace DepreciationDBApp.Infrastructure.Repositories
                 Employee employee = FindByDni(t.Dni);
                 if (employee == null)
                 {
-                    throw new Exception($"El objeto eployee con dni {t.Dni} no existe.");
+                    throw new Exception($"El objeto employee con dni {t.Dni} no existe.");
                 }
 
                 employee.Names = t.Names;

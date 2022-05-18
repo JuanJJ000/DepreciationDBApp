@@ -20,6 +20,12 @@ namespace DepreciationDBApp.Infrastructure.Repositories
         {
             try
             {
+
+                  if (t == null)
+                {
+                    throw new ArgumentNullException("El objeto Employee no puede ser null.");
+                }
+
                 depreciationDbContext.Assets.Add(t);
                 depreciationDbContext.SaveChanges();
             }

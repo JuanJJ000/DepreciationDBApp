@@ -11,6 +11,8 @@ namespace DepreciationDBApp.Domain.Interfaces
     {
 
         List<AssetEmployee> FindByEmployeeId(int employeeId);
+
+        AssetEmployee FindByAssetEmployeeId(int employeeId, int assetId);
         List<AssetEmployee> FindByAssetId(int assetId);
     }
 }

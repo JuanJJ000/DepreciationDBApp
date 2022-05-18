@@ -1,5 +1,6 @@
 using DepreciationDBApp.Applications.Interfaces;
 using DepreciationDBApp.Applications.Services;
+using DepreciationDBApp.Domain.DepreciationDBEntities;
 using DepreciationDBApp.Domain.Entities;
 using DepreciationDBApp.Domain.Interfaces;
 using DepreciationDBApp.Forms;

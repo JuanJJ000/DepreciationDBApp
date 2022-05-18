@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DepreciationDBApp.Domain\DepreciationDBApp.Domain.csproj" />
+    <ProjectReference Include="..\DepreciationDBApp.Infrastructure\DepreciationDBApp.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

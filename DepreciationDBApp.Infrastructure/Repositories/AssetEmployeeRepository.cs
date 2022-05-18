@@ -10,32 +10,125 @@ namespace DepreciationDBApp.Infrastructure.Repositories
 {
     public class AssetEmployeeRepository : IAssetEmployeeRepository
     {
+
+      
+        IDepreciationDbContext depreciationDbContext;
+
+        public AssetEmployeeRepository(IDepreciationDbContext depreciationDbContext)
+        {
+            this.depreciationDbContext = depreciationDbContext;
+        }
+
         public void Create(AssetEmployee t)
         {
-         
-            
+
+            try
+            {
+                if (t == null)
+                {
+                    throw new ArgumentNullException("El objeto AssetEmployee no puede ser null.");
+                }
+
+
+
+                depreciationDbContext.AssetEmployees.Add(t);
+                depreciationDbContext.SaveChanges();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
 
 
         }
 
         public bool Delete(AssetEmployee t)
         {
-            throw new NotImplementedException();
+            try
+            {
+                if (t == null)
+                {
+                    throw new ArgumentNullException("El objeto assetEmployee no puede ser null");
+                }
+                AssetEmployee assetEmployee = FindByAssetEmployeeId(t.EmployeeId, t.AssetId);
+                if (assetEmployee == null)
+                {
+                    throw new ArgumentNullException("assetEmployee no puede ser null");
+                }
+
+                depreciationDbContext.AssetEmployees.Remove(assetEmployee);
+                int result = depreciationDbContext.SaveChanges();
+
+                return result > 0;
+
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        public AssetEmployee FindByAssetEmployeeId(int employeeId, int assetId)
+        {
+            try
+            {
+                if (employeeId <= 0)
+                {
+                    throw new ArgumentException($"el id del employee {employeeId} no puede ser menor o igual a 0");
+                }
+
+                if (assetId <= 0)
+                {
+                    throw new ArgumentException($"el id del asset {assetId} no puede ser menor o igual a 0");
+                }
+
+                return depreciationDbContext.AssetEmployees.FirstOrDefault(x => x.EmployeeId == employeeId && x.AssetId == assetId);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         public List<AssetEmployee> FindByAssetId(int assetId)
         {
-            throw new NotImplementedException();
+            try
+            {
+                if (assetId <= 0)
+                {
+                    throw new ArgumentException("El assetId no puede ser menor o igual a 0");
+                }
+
+                return depreciationDbContext.AssetEmployees.Where(x => x.AssetId == assetId)
+                                                           .ToList();
+            }
+            catch
+            {
+                throw;
+            }
         }
 
         public List<AssetEmployee> FindByEmployeeId(int employeeId)
         {
-            throw new NotImplementedException();
+            try
+            {
+                if (employeeId <= 0)
+                {
+                    throw new ArgumentException("El employeeId no puede ser menor o igual a 0");
+                }
+
+                return depreciationDbContext.AssetEmployees.Where(x => x.EmployeeId == employeeId)
+                                                           .ToList();
+            }
+            catch
+            {
+                throw;
+            }
         }
 
         public List<AssetEmployee> GetAll()
         {
-            throw new NotImplementedException();
+            return depreciationDbContext.AssetEmployees.ToList();
         }
 
         public int Update(AssetEmployee t)

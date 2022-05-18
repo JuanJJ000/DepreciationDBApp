@@ -2,12 +2,13 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 using DepreciationDBApp.Domain.Entities;
+using DepreciationDBApp.Domain.Interfaces;
 
 #nullable disable
 
 namespace DepreciationDBApp.Domain.DepreciationDBEntities
 {
-    public partial class DepreciationDBContext : DbContext
+    public partial class DepreciationDBContext : DbContext , IDepreciationDbContext
     {
         public DepreciationDBContext()
         {
