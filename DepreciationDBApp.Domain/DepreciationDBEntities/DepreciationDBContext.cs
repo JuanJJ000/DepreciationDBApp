@@ -8,7 +8,7 @@ using DepreciationDBApp.Domain.Interfaces;
 
 namespace DepreciationDBApp.Domain.DepreciationDBEntities
 {
-    public partial class DepreciationDBContext : DbContext , IDepreciationDbContext
+    public partial class DepreciationDBContext : DbContext, IDepreciationDbContext
     {
         public DepreciationDBContext()
         {

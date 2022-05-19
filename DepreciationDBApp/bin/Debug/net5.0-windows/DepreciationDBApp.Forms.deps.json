@@ -1259,7 +1259,8 @@
       },
       "DepreciationDBApp.Applications/1.0.0": {
         "dependencies": {
-          "DepreciationDBApp.Domain": "1.0.0"
+          "DepreciationDBApp.Domain": "1.0.0",
+          "DepreciationDBApp.Infrastructure": "1.0.0"
         },
         "runtime": {
           "DepreciationDBApp.Applications.dll": {}

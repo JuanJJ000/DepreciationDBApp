@@ -1792,6 +1792,19 @@
         "runtime": {
           "bin/placeholder/DepreciationDBApp.Domain.dll": {}
         }
+      },
+      "DepreciationDBApp.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "DepreciationDBApp.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DepreciationDBApp.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DepreciationDBApp.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -6358,31 +6371,38 @@
       "type": "project",
       "path": "../DepreciationDBApp.Domain/DepreciationDBApp.Domain.csproj",
       "msbuildProject": "../DepreciationDBApp.Domain/DepreciationDBApp.Domain.csproj"
+    },
+    "DepreciationDBApp.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../DepreciationDBApp.Infrastructure/DepreciationDBApp.Infrastructure.csproj",
+      "msbuildProject": "../DepreciationDBApp.Infrastructure/DepreciationDBApp.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "DepreciationDBApp.Domain >= 1.0.0"
+      "DepreciationDBApp.Domain >= 1.0.0",
+      "DepreciationDBApp.Infrastructure >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\JADPA21\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\juanj\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\JADPA21\\Source\\Repos\\DepreciationDBApp\\DepreciationDBApp.Applications\\DepreciationDBApp.Applications.csproj",
+      "projectUniqueName": "C:\\Users\\juanj\\source\\repos\\DepreciationDBApp\\DepreciationDBApp.Applications\\DepreciationDBApp.Applications.csproj",
       "projectName": "DepreciationDBApp.Applications",
-      "projectPath": "C:\\Users\\JADPA21\\Source\\Repos\\DepreciationDBApp\\DepreciationDBApp.Applications\\DepreciationDBApp.Applications.csproj",
-      "packagesPath": "C:\\Users\\JADPA21\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\JADPA21\\Source\\Repos\\DepreciationDBApp\\DepreciationDBApp.Applications\\obj\\",
+      "projectPath": "C:\\Users\\juanj\\source\\repos\\DepreciationDBApp\\DepreciationDBApp.Applications\\DepreciationDBApp.Applications.csproj",
+      "packagesPath": "C:\\Users\\juanj\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\juanj\\source\\repos\\DepreciationDBApp\\DepreciationDBApp.Applications\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\JADPA21\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\juanj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6396,8 +6416,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\JADPA21\\Source\\Repos\\DepreciationDBApp\\DepreciationDBApp.Domain\\DepreciationDBApp.Domain.csproj": {
-              "projectPath": "C:\\Users\\JADPA21\\Source\\Repos\\DepreciationDBApp\\DepreciationDBApp.Domain\\DepreciationDBApp.Domain.csproj"
+            "C:\\Users\\juanj\\source\\repos\\DepreciationDBApp\\DepreciationDBApp.Domain\\DepreciationDBApp.Domain.csproj": {
+              "projectPath": "C:\\Users\\juanj\\source\\repos\\DepreciationDBApp\\DepreciationDBApp.Domain\\DepreciationDBApp.Domain.csproj"
+            },
+            "C:\\Users\\juanj\\source\\repos\\DepreciationDBApp\\DepreciationDBApp.Infrastructure\\DepreciationDBApp.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\juanj\\source\\repos\\DepreciationDBApp\\DepreciationDBApp.Infrastructure\\DepreciationDBApp.Infrastructure.csproj"
             }
           }
         }
@@ -6426,7 +6449,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
       }
     }
   }

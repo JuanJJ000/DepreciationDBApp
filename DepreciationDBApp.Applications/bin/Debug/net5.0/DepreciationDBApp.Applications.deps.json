@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v5.0": {
       "DepreciationDBApp.Applications/1.0.0": {
         "dependencies": {
-          "DepreciationDBApp.Domain": "1.0.0"
+          "DepreciationDBApp.Domain": "1.0.0",
+          "DepreciationDBApp.Infrastructure": "1.0.0"
         },
         "runtime": {
           "DepreciationDBApp.Applications.dll": {}
@@ -1328,6 +1329,14 @@
         "runtime": {
           "DepreciationDBApp.Domain.dll": {}
         }
+      },
+      "DepreciationDBApp.Infrastructure/1.0.0": {
+        "dependencies": {
+          "DepreciationDBApp.Domain": "1.0.0"
+        },
+        "runtime": {
+          "DepreciationDBApp.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -2129,6 +2138,11 @@
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },
     "DepreciationDBApp.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DepreciationDBApp.Infrastructure/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
