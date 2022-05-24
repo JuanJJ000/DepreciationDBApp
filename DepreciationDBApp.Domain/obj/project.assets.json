@@ -6408,24 +6408,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\juanj\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\JADPA21\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\juanj\\source\\repos\\DepreciationDBApp\\DepreciationDBApp.Domain\\DepreciationDBApp.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\JADPA21\\Source\\Repos\\DepreciationDBApp\\DepreciationDBApp.Domain\\DepreciationDBApp.Domain.csproj",
       "projectName": "DepreciationDBApp.Domain",
-      "projectPath": "C:\\Users\\juanj\\source\\repos\\DepreciationDBApp\\DepreciationDBApp.Domain\\DepreciationDBApp.Domain.csproj",
-      "packagesPath": "C:\\Users\\juanj\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\juanj\\source\\repos\\DepreciationDBApp\\DepreciationDBApp.Domain\\obj\\",
+      "projectPath": "C:\\Users\\JADPA21\\Source\\Repos\\DepreciationDBApp\\DepreciationDBApp.Domain\\DepreciationDBApp.Domain.csproj",
+      "packagesPath": "C:\\Users\\JADPA21\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\JADPA21\\Source\\Repos\\DepreciationDBApp\\DepreciationDBApp.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\juanj\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\JADPA21\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6485,7 +6484,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

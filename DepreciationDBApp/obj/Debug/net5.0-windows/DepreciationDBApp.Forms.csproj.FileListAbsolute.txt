@@ -79,3 +79,5 @@ C:\Users\JADPA21\Source\Repos\DepreciationDBApp\DepreciationDBApp\obj\Debug\net5
 C:\Users\JADPA21\Source\Repos\DepreciationDBApp\DepreciationDBApp\obj\Debug\net5.0-windows\ref\DepreciationDBApp.Forms.dll
 C:\Users\JADPA21\Source\Repos\DepreciationDBApp\DepreciationDBApp\obj\Debug\net5.0-windows\DepreciationDBApp.Forms.pdb
 C:\Users\JADPA21\Source\Repos\DepreciationDBApp\DepreciationDBApp\obj\Debug\net5.0-windows\DepreciationDBApp.Forms.genruntimeconfig.cache
+C:\Users\JADPA21\Source\Repos\DepreciationDBApp\DepreciationDBApp\obj\Debug\net5.0-windows\DepreciationDBApp.Forms.FrmActivo.resources
+C:\Users\JADPA21\Source\Repos\DepreciationDBApp\DepreciationDBApp\obj\Debug\net5.0-windows\DepreciationDBApp.Forms.FrmEmpleado.resources

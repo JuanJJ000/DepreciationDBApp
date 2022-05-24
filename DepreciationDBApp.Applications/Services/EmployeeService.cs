@@ -1,18 +1,14 @@
 ﻿using DepreciationDBApp.Applications.Interfaces;
 using DepreciationDBApp.Domain.Entities;
 using DepreciationDBApp.Domain.Interfaces;
-using DepreciationDBApp.Infrastructure.Repositories;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DepreciationDBApp.Applications.Services
 {
     public class EmployeeService : IEmployeeService
     {
-      
+        
         private IAssetEmployeeRepository assetEmployeeRepository;
         private IEmployeeRepository employeeRepository;
 
@@ -89,8 +85,8 @@ namespace DepreciationDBApp.Applications.Services
                     success = SetAssetToEmployee(employee, asset, effectiveDate);
                     if (!success)
                     {
-                        //throw new Exception($"Fallo al asignar el asseId{asset.Id} al empleado {employee.Id}.");
-                        break;
+                        throw new Exception($"Fallo al asignar el asseId{asset.Id} al empleado {employee.Id}.");
+                        //break;
                     }
                 }
 

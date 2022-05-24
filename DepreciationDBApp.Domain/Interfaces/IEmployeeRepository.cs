@@ -1,4 +1,5 @@
 ﻿using DepreciationDBApp.Domain.Entities;
+using Microsoft.EntityFrameworkCore.Storage;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,6 +21,7 @@ namespace DepreciationDBApp.Domain.Interfaces
 
         bool SetAssetToEmployee(Employee employee, List<Asset> assets, DateTime effectiveDate);
 
+        IDbContextTransaction GetTransaction();
 
     }
 }
