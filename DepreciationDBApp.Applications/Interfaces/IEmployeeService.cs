@@ -20,6 +20,6 @@ namespace DepreciationDBApp.Applications.Interfaces
 
         bool SetAssetToEmployee(Employee employee, List<Asset> assets, DateTime effectiveDate);
 
-
+        bool UnAssetToEmployee(Employee employee, List<Asset> assets, DateTime effectiveDate);
     }
 }

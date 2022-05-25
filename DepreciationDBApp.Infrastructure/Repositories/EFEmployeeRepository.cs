@@ -1,5 +1,7 @@
-﻿using DepreciationDBApp.Domain.Entities;
+﻿using DepreciationDBApp.Domain.DepreciationDBEntities;
+using DepreciationDBApp.Domain.Entities;
 using DepreciationDBApp.Domain.Interfaces;
+using Microsoft.EntityFrameworkCore.Storage;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -45,7 +47,7 @@ namespace DepreciationDBApp.Infrastructure.Repositories
                 {
                     throw new Exception($"El objeto con dni {t.Dni} no existe.");
                 }
-
+                employee.Status = "Retirado";
                 depreciationDbContext.Employees.Remove(employee);
                 int result = depreciationDbContext.SaveChanges();
 
@@ -121,6 +123,11 @@ namespace DepreciationDBApp.Infrastructure.Repositories
             {
                 throw;
             }
+        }
+
+        public IDbContextTransaction GetTransaction()
+        {
+            return ((DepreciationDBContext)depreciationDbContext).Database.BeginTransaction();
         }
 
         public bool SetAssetToEmployee(Employee employee, Asset asset, DateTime effectiveDate)

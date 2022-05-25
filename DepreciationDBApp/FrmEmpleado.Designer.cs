@@ -59,7 +59,7 @@ namespace DepreciationDBApp.Forms
             this.flowLayoutPanel1.Controls.Add(this.btnBorrar);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(420, 91);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(255, 100);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(255, 81);
             this.flowLayoutPanel1.TabIndex = 24;
             // 
             // btnAgregar
@@ -94,7 +94,13 @@ namespace DepreciationDBApp.Forms
             // 
             // cmbEmpleado
             // 
+            this.cmbEmpleado.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.cmbEmpleado.FormattingEnabled = true;
+            this.cmbEmpleado.Items.AddRange(new object[] {
+            "Activo",
+            "Vacaciones",
+            "Incapacidad",
+            ""});
             this.cmbEmpleado.Location = new System.Drawing.Point(169, 207);
             this.cmbEmpleado.Name = "cmbEmpleado";
             this.cmbEmpleado.Size = new System.Drawing.Size(121, 23);

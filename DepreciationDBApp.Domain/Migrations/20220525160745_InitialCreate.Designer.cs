@@ -4,14 +4,16 @@ using DepreciationDBApp.Domain.DepreciationDBEntities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace DepreciationDBApp.Domain.Migrations
 {
     [DbContext(typeof(DepreciationDBContext))]
-    partial class DepreciationDBContextModelSnapshot : ModelSnapshot
+    [Migration("20220525160745_InitialCreate")]
+    partial class InitialCreate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

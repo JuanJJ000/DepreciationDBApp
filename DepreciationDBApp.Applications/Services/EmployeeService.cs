@@ -75,9 +75,12 @@ namespace DepreciationDBApp.Applications.Services
             }
         }
 
+    
+
         public bool SetAssetToEmployee(Employee employee, List<Asset> assets, DateTime effectiveDate)
         {
             bool success = false;
+    
             using IDbContextTransaction transaction = employeeRepository.GetTransaction();
             try
             {
@@ -89,6 +92,7 @@ namespace DepreciationDBApp.Applications.Services
                 {
                     asset.Status = "Asignado";
                     success = assetRepository.Update(asset) > 0;
+                   
                     if (!success)
                     {
                         throw new Exception($"Fallo al asignar el asseId{asset.Id} al empleado {employee.Id}.");
@@ -143,6 +147,55 @@ namespace DepreciationDBApp.Applications.Services
          return employeeRepository.Update(t);
         }
 
+        public bool UnAssetToEmployee(Employee employee, List<Asset> assets, DateTime effectiveDate)
+        {
+            bool success = false;
 
+            using IDbContextTransaction transaction = employeeRepository.GetTransaction();
+            try
+            {
+
+                if (assets == null || assets.Count == 0)
+                {
+                    throw new ArgumentNullException("La lista no puede estar vacia");
+                }
+
+                foreach (Asset asset in assets)
+                {
+
+                    success = SetAssetToEmployee(employee, asset, effectiveDate);
+
+                    if (!success)
+                    {
+                        throw new Exception($"Fallo al desasignar el asseId{asset.Id} al empleado {employee.Id}.");
+                        //break;
+                    }
+                    asset.Status = "Disponible";
+                    success = assetRepository.Update(asset) > 0;
+
+                    if(!success)
+                    {
+                        throw new ArgumentNullException($"Fallo l actualizar el Asset {asset.Id}");
+                         
+
+                    }
+
+
+                }
+
+                    if(success)
+                    {
+                        transaction.Commit();
+                    }
+
+                    return success;
+                
+
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
     }
 }
