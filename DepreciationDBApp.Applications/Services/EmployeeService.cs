@@ -1,6 +1,8 @@
 ﻿using DepreciationDBApp.Applications.Interfaces;
 using DepreciationDBApp.Domain.Entities;
 using DepreciationDBApp.Domain.Interfaces;
+using DepreciationDBApp.Infrastructure.Repositories;
+using Microsoft.EntityFrameworkCore.Storage;
 using System;
 using System.Collections.Generic;
 
@@ -11,11 +13,13 @@ namespace DepreciationDBApp.Applications.Services
         
         private IAssetEmployeeRepository assetEmployeeRepository;
         private IEmployeeRepository employeeRepository;
+        private IAssetRepository assetRepository;
 
-        public EmployeeService(IEmployeeRepository employeeRepository, IAssetEmployeeRepository assetEmployeeRepository)
+        public EmployeeService(IEmployeeRepository employeeRepository, IAssetEmployeeRepository assetEmployeeRepository, IAssetRepository assetRepository)
         {
             this.employeeRepository = employeeRepository;
             this.assetEmployeeRepository = assetEmployeeRepository;
+            this.assetRepository = assetRepository;
         }
 
         public void Create(Employee t)
@@ -74,6 +78,7 @@ namespace DepreciationDBApp.Applications.Services
         public bool SetAssetToEmployee(Employee employee, List<Asset> assets, DateTime effectiveDate)
         {
             bool success = false;
+            using IDbContextTransaction transaction = employeeRepository.GetTransaction();
             try
             {
                 if (assets == null || assets.Count == 0)
@@ -82,12 +87,19 @@ namespace DepreciationDBApp.Applications.Services
                 }
                 foreach (Asset asset in assets)
                 {
-                    success = SetAssetToEmployee(employee, asset, effectiveDate);
+                    asset.Status = "Asignado";
+                    success = assetRepository.Update(asset) > 0;
                     if (!success)
                     {
                         throw new Exception($"Fallo al asignar el asseId{asset.Id} al empleado {employee.Id}.");
                         //break;
                     }
+                }
+
+
+                if(success)
+                {
+                    transaction.Commit();   
                 }
 
                 //assets.ForEach(x =>

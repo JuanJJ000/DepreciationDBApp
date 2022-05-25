@@ -44,9 +44,11 @@ namespace DepreciationDBApp.Forms
             this.btnBorrar = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.btnAsignar = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -167,7 +169,7 @@ namespace DepreciationDBApp.Forms
             this.flowLayoutPanel1.Controls.Add(this.btnActualizar);
             this.flowLayoutPanel1.Controls.Add(this.btnBorrar);
             this.flowLayoutPanel1.Controls.Add(this.btnAsignar);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(386, 187);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(435, 30);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(255, 133);
             this.flowLayoutPanel1.TabIndex = 13;
@@ -181,11 +183,21 @@ namespace DepreciationDBApp.Forms
             this.btnAsignar.Text = "Asignar";
             this.btnAsignar.UseVisualStyleBackColor = true;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(13, 223);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.Size = new System.Drawing.Size(790, 373);
+            this.dataGridView1.TabIndex = 14;
+            // 
             // FrmActivo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 363);
+            this.ClientSize = new System.Drawing.Size(806, 608);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.numericUpDown2);
@@ -202,6 +214,7 @@ namespace DepreciationDBApp.Forms
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -224,5 +237,6 @@ namespace DepreciationDBApp.Forms
         private System.Windows.Forms.Button btnBorrar;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Button btnAsignar;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

@@ -47,7 +47,9 @@ namespace DepreciationDBApp.Forms
             this.label6 = new System.Windows.Forms.Label();
             this.txtDni = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.flowLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -55,7 +57,7 @@ namespace DepreciationDBApp.Forms
             this.flowLayoutPanel1.Controls.Add(this.btnAgregar);
             this.flowLayoutPanel1.Controls.Add(this.btnActualizar);
             this.flowLayoutPanel1.Controls.Add(this.btnBorrar);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(390, 61);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(420, 91);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(255, 100);
             this.flowLayoutPanel1.TabIndex = 24;
@@ -203,11 +205,21 @@ namespace DepreciationDBApp.Forms
             this.label7.TabIndex = 29;
             this.label7.Text = "DNI:";
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 236);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.Size = new System.Drawing.Size(776, 257);
+            this.dataGridView1.TabIndex = 31;
+            // 
             // FrmEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 508);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txtDni);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtCorreo);
@@ -226,6 +238,7 @@ namespace DepreciationDBApp.Forms
             this.Name = "FrmEmpleado";
             this.Text = "FrmEmpleado";
             this.flowLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -251,5 +264,6 @@ namespace DepreciationDBApp.Forms
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtDni;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
