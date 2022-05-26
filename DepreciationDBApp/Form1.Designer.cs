@@ -29,18 +29,17 @@ namespace DepreciationDBApp.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btnAddAsset = new System.Windows.Forms.Button();
-            this.dgvAsset = new System.Windows.Forms.DataGridView();
             this.btnActivo = new System.Windows.Forms.Button();
             this.btnEmpleados = new System.Windows.Forms.Button();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvAsset)).BeginInit();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnAddAsset
             // 
-            this.btnAddAsset.Location = new System.Drawing.Point(535, 355);
+            this.btnAddAsset.Location = new System.Drawing.Point(360, 274);
             this.btnAddAsset.Name = "btnAddAsset";
             this.btnAddAsset.Size = new System.Drawing.Size(75, 23);
             this.btnAddAsset.TabIndex = 0;
@@ -48,55 +47,54 @@ namespace DepreciationDBApp.Forms
             this.btnAddAsset.UseVisualStyleBackColor = true;
             this.btnAddAsset.Click += new System.EventHandler(this.btnAddAsset_Click);
             // 
-            // dgvAsset
-            // 
-            this.dgvAsset.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAsset.Location = new System.Drawing.Point(12, 12);
-            this.dgvAsset.Name = "dgvAsset";
-            this.dgvAsset.RowTemplate.Height = 25;
-            this.dgvAsset.Size = new System.Drawing.Size(725, 296);
-            this.dgvAsset.TabIndex = 1;
-            // 
             // btnActivo
             // 
-            this.btnActivo.Location = new System.Drawing.Point(3, 3);
+            this.btnActivo.Location = new System.Drawing.Point(38, 81);
             this.btnActivo.Name = "btnActivo";
             this.btnActivo.Size = new System.Drawing.Size(75, 48);
             this.btnActivo.TabIndex = 2;
             this.btnActivo.Text = "Activos";
             this.btnActivo.UseVisualStyleBackColor = true;
+            this.btnActivo.Click += new System.EventHandler(this.btnActivo_Click);
             // 
             // btnEmpleados
             // 
-            this.btnEmpleados.Location = new System.Drawing.Point(84, 3);
+            this.btnEmpleados.Location = new System.Drawing.Point(38, 249);
             this.btnEmpleados.Name = "btnEmpleados";
             this.btnEmpleados.Size = new System.Drawing.Size(75, 48);
             this.btnEmpleados.TabIndex = 3;
             this.btnEmpleados.Text = "Empleados";
             this.btnEmpleados.UseVisualStyleBackColor = true;
+            this.btnEmpleados.Click += new System.EventHandler(this.btnEmpleados_Click);
             // 
-            // flowLayoutPanel1
+            // pictureBox1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.btnActivo);
-            this.flowLayoutPanel1.Controls.Add(this.btnEmpleados);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(278, 327);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(162, 81);
-            this.flowLayoutPanel1.TabIndex = 4;
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(221, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(497, 373);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(738, 457);
-            this.Controls.Add(this.flowLayoutPanel1);
-            this.Controls.Add(this.dgvAsset);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(807, 406);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.btnEmpleados);
+            this.Controls.Add(this.btnActivo);
             this.Controls.Add(this.btnAddAsset);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvAsset)).EndInit();
-            this.flowLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -104,10 +102,9 @@ namespace DepreciationDBApp.Forms
         #endregion
 
         private System.Windows.Forms.Button btnAddAsset;
-        private System.Windows.Forms.DataGridView dgvAsset;
         private System.Windows.Forms.Button btnActivo;
         private System.Windows.Forms.Button btnEmpleados;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

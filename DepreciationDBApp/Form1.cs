@@ -15,9 +15,12 @@ namespace DepreciationDBApp.Forms
     public partial class Form1 : Form
     {
         private IAssetService assetService;
+        private IEmployeeService employeeService;
+        
 
         public Form1(IAssetService assetService)
         {
+            
             this.assetService = assetService;
             InitializeComponent();
         }
@@ -47,7 +50,23 @@ namespace DepreciationDBApp.Forms
 
         private void LoadDataGridView()
         {
-            dgvAsset.DataSource = assetService.GetAll();
+            //dgvAsset.DataSource = assetService.GetAll();
+        }
+
+        private void btnEmpleados_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmEmpleado frmEmpleado = new FrmEmpleado(assetService,employeeService);
+            frmEmpleado.ShowDialog();
+            this.Show();
+        }
+
+        private void btnActivo_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmActivo frmActivo = new FrmActivo(assetService,employeeService);
+            frmActivo.ShowDialog();
+            this.Show();
         }
     }
 }

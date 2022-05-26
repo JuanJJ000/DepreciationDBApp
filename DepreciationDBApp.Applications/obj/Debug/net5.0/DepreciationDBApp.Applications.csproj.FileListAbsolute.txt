@@ -1,6 +1,5 @@
 C:\Users\JADPA21\Source\Repos\DepreciationDBApp\DepreciationDBApp.Applications\bin\Debug\net5.0\DepreciationDBApp.Applications.deps.json
 C:\Users\JADPA21\Source\Repos\DepreciationDBApp\DepreciationDBApp.Applications\bin\Debug\net5.0\DepreciationDBApp.Applications.dll
-C:\Users\JADPA21\Source\Repos\DepreciationDBApp\DepreciationDBApp.Applications\bin\Debug\net5.0\ref\DepreciationDBApp.Applications.dll
 C:\Users\JADPA21\Source\Repos\DepreciationDBApp\DepreciationDBApp.Applications\bin\Debug\net5.0\DepreciationDBApp.Applications.pdb
 C:\Users\JADPA21\Source\Repos\DepreciationDBApp\DepreciationDBApp.Applications\bin\Debug\net5.0\DepreciationDBApp.Domain.dll
 C:\Users\JADPA21\Source\Repos\DepreciationDBApp\DepreciationDBApp.Applications\bin\Debug\net5.0\DepreciationDBApp.Domain.pdb
@@ -15,3 +14,4 @@ C:\Users\JADPA21\Source\Repos\DepreciationDBApp\DepreciationDBApp.Applications\o
 C:\Users\JADPA21\Source\Repos\DepreciationDBApp\DepreciationDBApp.Applications\obj\Debug\net5.0\DepreciationDBApp.Applications.pdb
 C:\Users\JADPA21\source\repos\DepreciationDBApp\DepreciationDBApp.Applications\bin\Debug\net5.0\DepreciationDBApp.Infrastructure.dll
 C:\Users\JADPA21\source\repos\DepreciationDBApp\DepreciationDBApp.Applications\bin\Debug\net5.0\DepreciationDBApp.Infrastructure.pdb
+C:\Users\JADPA21\Source\Repos\DepreciationDBApp\DepreciationDBApp.Applications\bin\Debug\net5.0\ref\DepreciationDBApp.Applications.dll

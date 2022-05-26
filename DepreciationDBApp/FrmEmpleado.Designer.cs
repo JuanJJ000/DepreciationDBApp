@@ -47,9 +47,9 @@ namespace DepreciationDBApp.Forms
             this.label6 = new System.Windows.Forms.Label();
             this.txtDni = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvEmployee = new System.Windows.Forms.DataGridView();
             this.flowLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEmployee)).BeginInit();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -71,6 +71,7 @@ namespace DepreciationDBApp.Forms
             this.btnAgregar.TabIndex = 10;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // btnActualizar
             // 
@@ -211,21 +212,21 @@ namespace DepreciationDBApp.Forms
             this.label7.TabIndex = 29;
             this.label7.Text = "DNI:";
             // 
-            // dataGridView1
+            // dgvEmployee
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 236);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(776, 257);
-            this.dataGridView1.TabIndex = 31;
+            this.dgvEmployee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvEmployee.Location = new System.Drawing.Point(12, 236);
+            this.dgvEmployee.Name = "dgvEmployee";
+            this.dgvEmployee.RowTemplate.Height = 25;
+            this.dgvEmployee.Size = new System.Drawing.Size(776, 257);
+            this.dgvEmployee.TabIndex = 31;
             // 
             // FrmEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 508);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvEmployee);
             this.Controls.Add(this.txtDni);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtCorreo);
@@ -244,7 +245,7 @@ namespace DepreciationDBApp.Forms
             this.Name = "FrmEmpleado";
             this.Text = "FrmEmpleado";
             this.flowLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEmployee)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -270,6 +271,6 @@ namespace DepreciationDBApp.Forms
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtDni;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvEmployee;
     }
 }

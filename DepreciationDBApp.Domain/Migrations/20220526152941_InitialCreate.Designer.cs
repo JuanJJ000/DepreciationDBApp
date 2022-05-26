@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DepreciationDBApp.Domain.Migrations
 {
     [DbContext(typeof(DepreciationDBContext))]
-    [Migration("20220525160745_InitialCreate")]
+    [Migration("20220526152941_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DepreciationDBApp.Applications.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,27 @@ namespace DepreciationDBApp.Forms
 {
     public partial class FrmEmpleado : Form
     {
-        public FrmEmpleado()
+        private IAssetService assetService;
+        private IEmployeeService employeeService;
+
+
+        public FrmEmpleado(IAssetService assetService, IEmployeeService employeeService)
         {
+            this.employeeService = employeeService;
+            this.assetService = assetService;
             InitializeComponent();
         }
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void LoadDataGridView()
+        {
+            dgvEmployee.DataSource = assetService.GetAll();
+        }
+
+
     }
 }
